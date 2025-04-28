@@ -1,0 +1,86 @@
+@import url(https://fonts.bunny.net/css?family=montserrat:400,500,600,700,800,900);
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    cursor: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+*::selection {
+    background: #F2E9FE;
+    color: var(--active);
+}
+
+:root {
+    --primary: hsl(228, 24%, 96%);
+    --secondry: hsl(0, 0%, 100%);
+    
+    --font: Montserrat, sans-serif;
+    --hfont: "Rozha One", serif;
+    
+    --color: hsl(100, 9%, 6%);
+    --active: hsl(267, 62%, 45%);
+    --tilt: hsl(268, 76%, 95%);
+    --shadow: 0 2px 6px #E7E7E7;
+}
+
+body{
+    background:var(--primary);
+    color:var(--color);
+    font-family:var(--font);
+    display:grid;
+    place-items:center ;
+}
+
+main{
+    padding:2rem;
+    display:grid;
+    place-items:center ;
+    gap:2rem;
+}
+
+
+h1{
+    background:var(--secondry);
+    width:100%;
+    padding:.5rem;
+    font-family:var(--hfont);
+    text-align:center;
+    border-radius:1rem;
+}
+
+
+ul{
+    display:grid;
+    place-items:center ;
+    gap:1rem;
+    list-style-type:none;
+}
+
+li{
+    background:var(--secondry);
+    color:var(--color);
+    padding:1rem;
+    border-radius:1rem;
+    box-shadow:var(--shadow);
+    border:2px solid var(--tilt);
+}
+
+li:hover{
+    border:2px solid var(--active);
+    transform:rotate(-2deg);
+}
+
+span{
+    background:var(--tilt);
+    color:var(--active);
+    padding:1rem;
+    border-radius:1rem;
+    border:2px solid var(--active);
+    width:100%;
+    display:grid;
+    place-items:center ;
+  }
